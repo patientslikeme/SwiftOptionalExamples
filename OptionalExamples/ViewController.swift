@@ -20,9 +20,9 @@ class ViewController: UIViewController {
         let username = usernameField.text
         let password = passwordField.text
 
-        if User.authenticateUsername(username, password: password) {
+        if let user = User.authenticateUsername(username, password: password) {
             let alert = UIAlertController(title: "Good job",
-                message: "thanks for visiting",
+                message: "thanks for visiting \(user.firstName) \(user.lastName)",
                 preferredStyle: .Alert)
 
             alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))

@@ -26,13 +26,13 @@ class User {
       self.password = password
     }
 
-    class func authenticateUsername(username: String, password: String) -> Bool {
+    class func authenticateUsername(username: String, password: String) -> User? {
         for user in users {
             if user.password == password && user.username == username {
-                return true
+                return user
             }
         }
 
-        return false
+        return nil
     }
 }
