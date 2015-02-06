@@ -13,6 +13,7 @@
 		7954F7BF1A7EF75A00E2341C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7954F7BE1A7EF75A00E2341C /* Images.xcassets */; };
 		7954F7C21A7EF75A00E2341C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7954F7C01A7EF75A00E2341C /* LaunchScreen.xib */; };
 		7954F7CE1A7EF75A00E2341C /* OptionalExamplesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7954F7CD1A7EF75A00E2341C /* OptionalExamplesTests.swift */; };
+		798EF1821A850F9500F4A1AC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798EF1811A850F9500F4A1AC /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		7954F7C71A7EF75A00E2341C /* OptionalExamplesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OptionalExamplesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7954F7CC1A7EF75A00E2341C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7954F7CD1A7EF75A00E2341C /* OptionalExamplesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalExamplesTests.swift; sourceTree = "<group>"; };
+		798EF1811A850F9500F4A1AC /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		7954F7B41A7EF75A00E2341C /* OptionalExamples */ = {
 			isa = PBXGroup;
 			children = (
+				798EF1811A850F9500F4A1AC /* User.swift */,
 				7954F7B71A7EF75A00E2341C /* AppDelegate.swift */,
 				7954F7B91A7EF75A00E2341C /* ViewController.swift */,
 				7954F7BB1A7EF75A00E2341C /* Main.storyboard */,
@@ -214,6 +217,7 @@
 			files = (
 				7954F7BA1A7EF75A00E2341C /* ViewController.swift in Sources */,
 				7954F7B81A7EF75A00E2341C /* AppDelegate.swift in Sources */,
+				798EF1821A850F9500F4A1AC /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +411,7 @@
 				7954F7D31A7EF75A00E2341C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7954F7D41A7EF75A00E2341C /* Build configuration list for PBXNativeTarget "OptionalExamplesTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +420,7 @@
 				7954F7D61A7EF75A00E2341C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

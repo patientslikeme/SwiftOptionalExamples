@@ -9,17 +9,35 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet var usernameField: UITextField!
+    @IBOutlet var passwordField: UITextField!
+    @IBOutlet var authenticateButton: UIBarButtonItem!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBAction func authenticate() {
+        // prevent double taps
+        authenticateButton.enabled = false
+
+        let username = usernameField.text
+        let password = passwordField.text
+
+        if User.authenticateUsername(username, password: password) {
+            let alert = UIAlertController(title: "Good job",
+                message: "thanks for visiting",
+                preferredStyle: .Alert)
+
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
+
+            presentViewController(alert, animated: true, completion: nil)
+        } else {
+            let alert = UIAlertController(title: "Bad username or password",
+                message: "You have supplied a bad username or password",
+                preferredStyle: .Alert)
+
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
+
+            presentViewController(alert, animated: true, completion: nil)
+        }
+
+        authenticateButton.enabled = true
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
-
